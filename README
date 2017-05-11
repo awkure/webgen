@@ -3,7 +3,7 @@
 ╚╩╝╚═╝╚═╝╚═╝╚═╝╝╚╝ 0.0.1 [unreleased]
 -------------------------------------
 
-A collection of simple interpretators for various web stuff. They propose to help with generating code from lisp environment. This project was made straight for my learning and fatously time wasting purposes. I had to do something while I'm learning lisp. There is nothing yet to talk about but you can check my cldoc generated docs inside `docs/` directory. I don't know why people like to upload every deprecated/not working shit to github, but I will not stand out among them.
+A collection of simple interpretators for various web stuff. They propose to help with generating code from lisp environment. This project was made straight for my learning and fatously time wasting purposes. I had to do something while I'm learning lisp. There is nothing yet to talk about but you can check my cldoc generated docs inside `docs/` directory. I don't know why people are so obsessed in uploading every deprecated/not working shit to github, but I will not stand out among them.
 After all, we're all alike.
 
 Dependencies 
@@ -97,7 +97,7 @@ Project Structure
                                 ├────┤                       │
                                 │    │  Not yet implemented  │
                                 │    │                       │
-                                │    └───────────────────────┘   
+                                │    └───────────────────────┘
                                 │
                                 │
                                 │    ┌───────────────────────┐
@@ -106,7 +106,7 @@ Project Structure
                                 └────┤                       │
                                      │  Not yet implemented  │
                                      │                       │
-                                     └───────────────────────┘
+                                     └───────────────────────┘ 
 
 
  Todo

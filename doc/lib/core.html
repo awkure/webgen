@@ -1,0 +1,2935 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html>
+<head>
+<link rel="Stylesheet" type="text/css" href="../cludg.css"/>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"/>
+<title>
+core</title>
+</head>
+<body>
+<div id="navbar">
+<table cellspacing="0" cellpadding="0" border="0" style="width: 100%;">
+<colgroup span="3">
+<col width="0*"/>
+<col width="0*"/>
+<col width="1*"/>
+</colgroup>
+<tr>
+<td align="left" valign="baseline">
+<a href="./macros.html">
+Prev:&nbsp;macros</a>
+<br/>
+<a href="css/package.html">
+Next:&nbsp;package</a>
+</td>
+<td>
+&nbsp;&nbsp;&nbsp;&nbsp;</td>
+<td align="left" valign="baseline">
+<span class="upchain">
+<b>
+core</b>
+<br/>
+<a href="../index.html">
+Index</a>
+</span>
+&nbsp;&nbsp;&nbsp;&nbsp;</td>
+</tr>
+</table>
+</div>
+<div class="cludg-doc-body">
+<h2>
+core
+</h2>
+<table style="width: 100%;" class="summary-table">
+<tr class="table-heading-color">
+<th class="summary" colspan="2">
+Class summary</th>
+</tr>
+<tr class="table-row-color">
+<td class="summary-name">
+<a href="./core.html#_g8637">
+html-compiler</a>
+</td>
+<td class="summary">
+</td>
+</tr>
+<tr class="table-row-color">
+<td class="summary-name">
+<a href="./core.html#_g8599">
+html-pp</a>
+</td>
+<td class="summary">
+</td>
+</tr>
+<tr class="table-row-color">
+<td class="summary-name">
+<a href="./core.html#_g8581">
+indent-printer</a>
+</td>
+<td class="summary">
+</td>
+</tr>
+</table>
+<table style="width: 100%;" class="summary-table">
+<tr class="table-heading-color">
+<th class="summary" colspan="2">
+Condition summary</th>
+</tr>
+<tr class="table-row-color">
+<td class="summary-name">
+<a href="./core.html#_g8611">
+embedded-code-in</a>
+</td>
+<td class="summary">
+inherits from <em class="cl">embeded-lisp-src</em></td>
+</tr>
+<tr class="table-row-color">
+<td class="summary-name">
+<a href="./core.html#_g8608">
+embedded-lisp-src</a>
+</td>
+<td class="summary">
+inherits from <em class="cl">error</em></td>
+</tr>
+<tr class="table-row-color">
+<td class="summary-name">
+<a href="./core.html#_g8610">
+embedded-value-in</a>
+</td>
+<td class="summary">
+inherits from <a href="./core.html#_g8608"><em class="cl">embedded-lisp-src</em></a></td>
+</tr>
+</table>
+<table style="width: 100%;" class="summary-table">
+<tr class="table-heading-color">
+<th class="summary" colspan="2">
+Method summary</th>
+</tr>
+<tr class="table-row-color">
+<td class="summary-name">
+<a href="./core.html#_g8584">
+beginning-of-line-p</a>
+</td>
+<td class="summary">
+indent-printer</td>
+</tr>
+<tr class="table-row-color">
+<td class="summary-name">
+<a href="./core.html#_g8598">
+embed-code</a>
+</td>
+<td class="summary">
+processor code</td>
+</tr>
+<tr class="table-row-color">
+<td class="summary-name">
+<a href="./core.html#_g8597">
+embed-value</a>
+</td>
+<td class="summary">
+processor value</td>
+</tr>
+<tr class="table-row-color">
+<td class="summary-name">
+<a href="./core.html#_g8609">
+form</a>
+</td>
+<td class="summary">
+embedded-lisp-src</td>
+</tr>
+<tr class="table-row-color">
+<td class="summary-name">
+<a href="./core.html#_g8593">
+freshline</a>
+</td>
+<td class="summary">
+processor</td>
+</tr>
+<tr class="table-row-color">
+<td class="summary-name">
+<a href="./core.html#_g8594">
+indent</a>
+</td>
+<td class="summary">
+processor</td>
+</tr>
+<tr class="table-row-color">
+<td class="summary-name">
+<a href="./core.html#_g8583">
+indentation</a>
+</td>
+<td class="summary">
+indent-printer</td>
+</tr>
+<tr class="table-row-color">
+<td class="summary-name">
+<a href="./core.html#_g8582">
+indenting-p</a>
+</td>
+<td class="summary">
+indent-printer</td>
+</tr>
+<tr class="table-row-color">
+<td class="summary-name">
+<a href="./core.html#_g8592">
+newline</a>
+</td>
+<td class="summary">
+processor</td>
+</tr>
+<tr class="table-row-color">
+<td class="summary-name">
+<a href="./core.html#_g8651">
+op-&gt;code</a>
+</td>
+<td class="summary">
+op <em>&amp;rest</em> operands</td>
+</tr>
+<tr class="table-row-color">
+<td class="summary-name">
+<a href="./core.html#_g8638">
+ops</a>
+</td>
+<td class="summary">
+html-compiler</td>
+</tr>
+<tr class="table-row-color">
+<td class="summary-name">
+<a href="./core.html#_g8585">
+out</a>
+</td>
+<td class="summary">
+indent-printer</td>
+</tr>
+<tr class="table-row-color">
+<td class="summary-name">
+<a href="./core.html#_g8601">
+printer</a>
+</td>
+<td class="summary">
+html-pp</td>
+</tr>
+<tr class="table-row-color">
+<td class="summary-name">
+<a href="./core.html#_g8591">
+raw-string</a>
+</td>
+<td class="summary">
+processor string <em>&amp;optional</em> newlines-p</td>
+</tr>
+<tr class="table-row-color">
+<td class="summary-name">
+<a href="./core.html#_g8600">
+tab-width</a>
+</td>
+<td class="summary">
+html-pp</td>
+</tr>
+<tr class="table-row-color">
+<td class="summary-name">
+<a href="./core.html#_g8596">
+toggle-indenting</a>
+</td>
+<td class="summary">
+processor</td>
+</tr>
+<tr class="table-row-color">
+<td class="summary-name">
+<a href="./core.html#_g8595">
+unindent</a>
+</td>
+<td class="summary">
+processor</td>
+</tr>
+</table>
+<table style="width: 100%;" class="summary-table">
+<tr class="table-heading-color">
+<th class="summary" colspan="2">
+Function summary</th>
+</tr>
+<tr class="table-row-color">
+<td class="summary-name">
+<a href="./core.html#_g8626">
+block-element-p</a>
+</td>
+<td class="summary">
+tag</td>
+</tr>
+<tr class="table-row-color">
+<td class="summary-name">
+<a href="./core.html#_g8565">
+codegen-html</a>
+</td>
+<td class="summary">
+ops pretty</td>
+</tr>
+<tr class="table-row-color">
+<td class="summary-name">
+<a href="./core.html#_g8649">
+compile-buffer</a>
+</td>
+<td class="summary">
+buf ops</td>
+</tr>
+<tr class="table-row-color">
+<td class="summary-name">
+<a href="./core.html#_g8572">
+cons-form-p</a>
+</td>
+<td class="summary">
+form <em>&amp;optional</em> (test #'keywordp)</td>
+</tr>
+<tr class="table-row-color">
+<td class="summary-name">
+<a href="./core.html#_g8586">
+emit</a>
+</td>
+<td class="summary">
+ip string</td>
+</tr>
+<tr class="table-row-color">
+<td class="summary-name">
+<a href="./core.html#_g8632">
+emit-attributes</a>
+</td>
+<td class="summary">
+processor attributes</td>
+</tr>
+<tr class="table-row-color">
+<td class="summary-name">
+<a href="./core.html#_g8634">
+emit-close-tag</a>
+</td>
+<td class="summary">
+processor tag body-p</td>
+</tr>
+<tr class="table-row-color">
+<td class="summary-name">
+<a href="./core.html#_g8633">
+emit-element-body</a>
+</td>
+<td class="summary">
+processor tag body</td>
+</tr>
+<tr class="table-row-color">
+<td class="summary-name">
+<a href="./core.html#_g8589">
+emit-freshline</a>
+</td>
+<td class="summary">
+ip</td>
+</tr>
+<tr class="table-row-color">
+<td class="summary-name">
+<a href="./core.html#_g8564">
+emit-html</a>
+</td>
+<td class="summary">
+sexp</td>
+</tr>
+<tr class="table-row-color">
+<td class="summary-name">
+<a href="./core.html#_g8588">
+emit-newline</a>
+</td>
+<td class="summary">
+ip</td>
+</tr>
+<tr class="table-row-color">
+<td class="summary-name">
+<a href="./core.html#_g8631">
+emit-open-tag</a>
+</td>
+<td class="summary">
+processor tag body-p attributes</td>
+</tr>
+<tr class="table-row-color">
+<td class="summary-name">
+<a href="./core.html#_g8587">
+emit/no-newlines</a>
+</td>
+<td class="summary">
+ip string <em>&amp;key</em> (start 0) end</td>
+</tr>
+<tr class="table-row-color">
+<td class="summary-name">
+<a href="./core.html#_g8628">
+empty-element-p</a>
+</td>
+<td class="summary">
+tag</td>
+</tr>
+<tr class="table-row-color">
+<td class="summary-name">
+<a href="./core.html#_g8580">
+escape</a>
+</td>
+<td class="summary">
+in to-escape</td>
+</tr>
+<tr class="table-row-color">
+<td class="summary-name">
+<a href="./core.html#_g8579">
+escape-char</a>
+</td>
+<td class="summary">
+char</td>
+</tr>
+<tr class="table-row-color">
+<td class="summary-name">
+<a href="./core.html#_g8616">
+eval-code</a>
+</td>
+<td class="summary">
+<em>&amp;optional</em> condition</td>
+</tr>
+<tr class="table-row-color">
+<td class="summary-name">
+<a href="./core.html#_g8615">
+eval-dynamic-vars</a>
+</td>
+<td class="summary">
+<em>&amp;optional</em> condition</td>
+</tr>
+<tr class="table-row-color">
+<td class="summary-name">
+<a href="./core.html#_g8614">
+evaluate</a>
+</td>
+<td class="summary">
+<em>&amp;optional</em> condition</td>
+</tr>
+<tr class="table-row-color">
+<td class="summary-name">
+<a href="./core.html#_g8667">
+expand-macro-form</a>
+</td>
+<td class="summary">
+form</td>
+</tr>
+<tr class="table-row-color">
+<td class="summary-name">
+<a href="./core.html#_g8650">
+generate-code</a>
+</td>
+<td class="summary">
+ops</td>
+</tr>
+<tr class="table-row-color">
+<td class="summary-name">
+<a href="./core.html#_g8666">
+generate-macro-w/o-attributes</a>
+</td>
+<td class="summary">
+name args body</td>
+</tr>
+<tr class="table-row-color">
+<td class="summary-name">
+<a href="./core.html#_g8665">
+generate-macro-with-attributes</a>
+</td>
+<td class="summary">
+name attribute-args args body</td>
+</tr>
+<tr class="table-row-color">
+<td class="summary-name">
+<a href="./core.html#_g8570">
+get-pp</a>
+</td>
+<td class="summary">
+</td>
+</tr>
+<tr class="table-row-color">
+<td class="summary-name">
+<a href="./core.html#_g8590">
+indent-if-necessary</a>
+</td>
+<td class="summary">
+ip</td>
+</tr>
+<tr class="table-row-color">
+<td class="summary-name">
+<a href="./core.html#_g8663">
+macro-form-p</a>
+</td>
+<td class="summary">
+form</td>
+</tr>
+<tr class="table-row-color">
+<td class="summary-name">
+<a href="./core.html#_g8635">
+make-op-buff</a>
+</td>
+<td class="summary">
+</td>
+</tr>
+<tr class="table-row-color">
+<td class="summary-name">
+<a href="./core.html#_g8648">
+optimize-static-output</a>
+</td>
+<td class="summary">
+ops</td>
+</tr>
+<tr class="table-row-color">
+<td class="summary-name">
+<a href="./core.html#_g8627">
+paragraph-element-p</a>
+</td>
+<td class="summary">
+tag</td>
+</tr>
+<tr class="table-row-color">
+<td class="summary-name">
+<a href="./core.html#_g8573">
+parse-cons-form</a>
+</td>
+<td class="summary">
+sexp</td>
+</tr>
+<tr class="table-row-color">
+<td class="summary-name">
+<a href="./core.html#_g8574">
+parse-explicit-attrs-sexp</a>
+</td>
+<td class="summary">
+sexp</td>
+</tr>
+<tr class="table-row-color">
+<td class="summary-name">
+<a href="./core.html#_g8664">
+parse-html-macro-lambda</a>
+</td>
+<td class="summary">
+args</td>
+</tr>
+<tr class="table-row-color">
+<td class="summary-name">
+<a href="./core.html#_g8575">
+parse-implicit-attrs-sexp</a>
+</td>
+<td class="summary">
+sexp</td>
+</tr>
+<tr class="table-row-color">
+<td class="summary-name">
+<a href="./core.html#_g8618">
+process</a>
+</td>
+<td class="summary">
+processor form</td>
+</tr>
+<tr class="table-row-color">
+<td class="summary-name">
+<a href="./core.html#_g8630">
+process-cons-sexp-html</a>
+</td>
+<td class="summary">
+processor form</td>
+</tr>
+<tr class="table-row-color">
+<td class="summary-name">
+<a href="./core.html#_g8620">
+process-sexp-html</a>
+</td>
+<td class="summary">
+processor form</td>
+</tr>
+<tr class="table-row-color">
+<td class="summary-name">
+<a href="./core.html#_g8661">
+process-special-form</a>
+</td>
+<td class="summary">
+processor form</td>
+</tr>
+<tr class="table-row-color">
+<td class="summary-name">
+<a href="./core.html#_g8636">
+push-op</a>
+</td>
+<td class="summary">
+op ops-buff</td>
+</tr>
+<tr class="table-row-color">
+<td class="summary-name">
+<a href="./core.html#_g8571">
+self-evaluating-p</a>
+</td>
+<td class="summary">
+obj</td>
+</tr>
+<tr class="table-row-color">
+<td class="summary-name">
+<a href="./core.html#_g8647">
+sexp-&gt;ops</a>
+</td>
+<td class="summary">
+body</td>
+</tr>
+<tr class="table-row-color">
+<td class="summary-name">
+<a href="./core.html#_g8619">
+sexp-html-p</a>
+</td>
+<td class="summary">
+form</td>
+</tr>
+<tr class="table-row-color">
+<td class="summary-name">
+<a href="./core.html#_g8660">
+special-form-p</a>
+</td>
+<td class="summary">
+form</td>
+</tr>
+<tr class="table-row-color">
+<td class="summary-name">
+<a href="./core.html#_g8629">
+whitespace-p</a>
+</td>
+<td class="summary">
+tag</td>
+</tr>
+</table>
+<table style="width: 100%;" class="summary-table">
+<tr class="table-heading-color">
+<th class="summary" colspan="2">
+Macro summary</th>
+</tr>
+<tr class="table-row-color">
+<td class="summary-name">
+<a href="./core.html#_g8568">
+define-html-macro</a>
+</td>
+<td class="summary">
+name (<em>&amp;rest</em> args) <em>&amp;body</em> body</td>
+</tr>
+<tr class="table-row-color">
+<td class="summary-name">
+<a href="./core.html#_g8662">
+define-html-special-op</a>
+</td>
+<td class="summary">
+name (processor <em>&amp;rest</em> other-parameters) <em>&amp;body</em> body</td>
+</tr>
+<tr class="table-row-color">
+<td class="summary-name">
+<a href="./core.html#_g8566">
+html</a>
+</td>
+<td class="summary">
+<em>&amp;whole</em> whole <em>&amp;body</em> body</td>
+</tr>
+<tr class="table-row-color">
+<td class="summary-name">
+<a href="./core.html#_g8569">
+in-html-style</a>
+</td>
+<td class="summary">
+syntax</td>
+</tr>
+<tr class="table-row-color">
+<td class="summary-name">
+<a href="./core.html#_g8617">
+with-dynamic-evaluation</a>
+</td>
+<td class="summary">
+(<em>&amp;key</em> values code) <em>&amp;body</em> body</td>
+</tr>
+<tr class="table-row-color">
+<td class="summary-name">
+<a href="./core.html#_g8567">
+with-html-out</a>
+</td>
+<td class="summary">
+(stream <em>&amp;key</em> (pretty *pretty*)) <em>&amp;body</em> body</td>
+</tr>
+</table>
+<div class="defclass">
+<div class="defunsignatures">
+<a id="_g8581">
+</a>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+indent-printer&nbsp;&nbsp;</td>
+<td class="lambda-list">
+</td>
+<td class="symbol-type">
+&nbsp;[Class]</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="defclass-initargs">
+<div>
+<div>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+:out&nbsp;&nbsp;</td>
+<td class="lambda-list">
+</td>
+<td class="symbol-type">
+&nbsp;[Initarg]</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="defclass-slots-doc">
+</div>
+<div class="defclass-generics">
+<div class="defun">
+<div class="defunsignatures">
+<a id="_g8582">
+</a>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+indenting-p&nbsp;&nbsp;</td>
+<td class="lambda-list">
+indent-printer</td>
+<td class="symbol-type">
+&nbsp;[Generic&nbsp;function]</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="doc-body">
+<p>
+Returns and (with setf) changes the indenting-p of the specified indent-printer 
+ </p>
+</div>
+</div>
+<div class="defun">
+<div class="defunsignatures">
+<a id="_g8583">
+</a>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+indentation&nbsp;&nbsp;</td>
+<td class="lambda-list">
+indent-printer</td>
+<td class="symbol-type">
+&nbsp;[Generic&nbsp;function]</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="doc-body">
+<p>
+Returns and (with setf) changes the indentation of the specified indent-printer 
+ </p>
+</div>
+</div>
+<div class="defun">
+<div class="defunsignatures">
+<a id="_g8584">
+</a>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+beginning-of-line-p&nbsp;&nbsp;</td>
+<td class="lambda-list">
+indent-printer</td>
+<td class="symbol-type">
+&nbsp;[Generic&nbsp;function]</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="doc-body">
+<p>
+Returns and (with setf) changes the beginning-of-line-p of the specified indent-printer 
+ </p>
+</div>
+</div>
+<div class="defun">
+<div class="defunsignatures">
+<a id="_g8585">
+</a>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+out&nbsp;&nbsp;</td>
+<td class="lambda-list">
+indent-printer</td>
+<td class="symbol-type">
+&nbsp;[Generic&nbsp;function]</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="doc-body">
+<p>
+Returns and (with setf) changes the out of the specified indent-printer 
+ </p>
+</div>
+</div>
+</div>
+</div>
+<div class="defclass">
+<div class="defunsignatures">
+<a id="_g8599">
+</a>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+html-pp&nbsp;&nbsp;</td>
+<td class="lambda-list">
+</td>
+<td class="symbol-type">
+&nbsp;[Class]</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="defclass-initargs">
+<div>
+<div>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+:printer&nbsp;&nbsp;</td>
+<td class="lambda-list">
+</td>
+<td class="symbol-type">
+&nbsp;[Initarg]</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div>
+<div>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+:tab-width&nbsp;&nbsp;</td>
+<td class="lambda-list">
+</td>
+<td class="symbol-type">
+&nbsp;[Initarg]</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="defclass-slots-doc">
+</div>
+<div class="defclass-generics">
+<div class="defun">
+<div class="defunsignatures">
+<a id="_g8600">
+</a>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+tab-width&nbsp;&nbsp;</td>
+<td class="lambda-list">
+html-pp</td>
+<td class="symbol-type">
+&nbsp;[Generic&nbsp;function]</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="doc-body">
+<p>
+Returns and (with setf) changes the tab-width of the specified html-pp 
+ </p>
+</div>
+</div>
+<div class="defun">
+<div class="defunsignatures">
+<a id="_g8601">
+</a>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+printer&nbsp;&nbsp;</td>
+<td class="lambda-list">
+html-pp</td>
+<td class="symbol-type">
+&nbsp;[Generic&nbsp;function]</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="doc-body">
+<p>
+Returns and (with setf) changes the printer of the specified html-pp 
+ </p>
+</div>
+</div>
+</div>
+</div>
+<div class="defclass">
+<div class="defunsignatures">
+<a id="_g8637">
+</a>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+html-compiler&nbsp;&nbsp;</td>
+<td class="lambda-list">
+</td>
+<td class="symbol-type">
+&nbsp;[Class]</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="defclass-initargs">
+</div>
+<div class="defclass-slots-doc">
+</div>
+<div class="defclass-generics">
+<div class="defun">
+<div class="defunsignatures">
+<a id="_g8638">
+</a>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+ops&nbsp;&nbsp;</td>
+<td class="lambda-list">
+html-compiler</td>
+<td class="symbol-type">
+&nbsp;[Generic&nbsp;function]</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="doc-body">
+<p>
+Returns and (with setf) changes the ops of the specified html-compiler 
+ </p>
+</div>
+</div>
+</div>
+</div>
+<div class="defclass">
+<div class="defunsignatures">
+<a id="_g8608">
+</a>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+embedded-lisp-src&nbsp;&nbsp;</td>
+<td class="lambda-list">
+inherits from <em class="cl">error</em></td>
+<td class="symbol-type">
+&nbsp;[Condition]</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="defclass-initargs">
+<div>
+<div>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+:form&nbsp;&nbsp;</td>
+<td class="lambda-list">
+</td>
+<td class="symbol-type">
+&nbsp;[Initarg]</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="defclass-slots-doc">
+</div>
+<div class="defclass-generics">
+<div class="defun">
+<div class="defunsignatures">
+<a id="_g8609">
+</a>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+form&nbsp;&nbsp;</td>
+<td class="lambda-list">
+embedded-lisp-src</td>
+<td class="symbol-type">
+&nbsp;[Generic&nbsp;function]</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="doc-body">
+<p>
+Returns the form of the specified embedded-lisp-src 
+ </p>
+</div>
+</div>
+</div>
+</div>
+<div class="defclass">
+<div class="defunsignatures">
+<a id="_g8610">
+</a>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+embedded-value-in&nbsp;&nbsp;</td>
+<td class="lambda-list">
+inherits from <a href="./core.html#_g8608"><em class="cl">embedded-lisp-src</em></a></td>
+<td class="symbol-type">
+&nbsp;[Condition]</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="defclass">
+<div class="defunsignatures">
+<a id="_g8611">
+</a>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+embedded-code-in&nbsp;&nbsp;</td>
+<td class="lambda-list">
+inherits from <em class="cl">embeded-lisp-src</em></td>
+<td class="symbol-type">
+&nbsp;[Condition]</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="defparam">
+<div class="defunsignatures">
+<a id="_g8559">
+</a>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+*html-out*&nbsp;&nbsp;</td>
+<td class="lambda-list">
+</td>
+<td class="symbol-type">
+&nbsp;[Variable]</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="defparam">
+<div class="defunsignatures">
+<a id="_g8560">
+</a>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+*pretty*&nbsp;&nbsp;</td>
+<td class="lambda-list">
+</td>
+<td class="symbol-type">
+&nbsp;[Variable]</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="defparam">
+<div class="defunsignatures">
+<a id="_g8561">
+</a>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+*html-pp*&nbsp;&nbsp;</td>
+<td class="lambda-list">
+</td>
+<td class="symbol-type">
+&nbsp;[Variable]</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="defparam">
+<div class="defunsignatures">
+<a id="_g8562">
+</a>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+*debug*&nbsp;&nbsp;</td>
+<td class="lambda-list">
+</td>
+<td class="symbol-type">
+&nbsp;[Variable]</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="defparam">
+<div class="defunsignatures">
+<a id="_g8563">
+</a>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+*xhtml*&nbsp;&nbsp;</td>
+<td class="lambda-list">
+</td>
+<td class="symbol-type">
+&nbsp;[Variable]</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="defparam">
+<div class="defunsignatures">
+<a id="_g8576">
+</a>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+*element-escapes*&nbsp;&nbsp;</td>
+<td class="lambda-list">
+</td>
+<td class="symbol-type">
+&nbsp;[Variable]</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="defparam">
+<div class="defunsignatures">
+<a id="_g8577">
+</a>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+*attribute-escapes*&nbsp;&nbsp;</td>
+<td class="lambda-list">
+</td>
+<td class="symbol-type">
+&nbsp;[Variable]</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="defparam">
+<div class="defunsignatures">
+<a id="_g8578">
+</a>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+*escapes*&nbsp;&nbsp;</td>
+<td class="lambda-list">
+</td>
+<td class="symbol-type">
+&nbsp;[Variable]</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="defparam">
+<div class="defunsignatures">
+<a id="_g8621">
+</a>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+*block-elements*&nbsp;&nbsp;</td>
+<td class="lambda-list">
+</td>
+<td class="symbol-type">
+&nbsp;[Variable]</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="defparam">
+<div class="defunsignatures">
+<a id="_g8622">
+</a>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+*paragraph-elements*&nbsp;&nbsp;</td>
+<td class="lambda-list">
+</td>
+<td class="symbol-type">
+&nbsp;[Variable]</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="defparam">
+<div class="defunsignatures">
+<a id="_g8623">
+</a>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+*inline-elements*&nbsp;&nbsp;</td>
+<td class="lambda-list">
+</td>
+<td class="symbol-type">
+&nbsp;[Variable]</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="defparam">
+<div class="defunsignatures">
+<a id="_g8624">
+</a>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+*empty-elements*&nbsp;&nbsp;</td>
+<td class="lambda-list">
+</td>
+<td class="symbol-type">
+&nbsp;[Variable]</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="defparam">
+<div class="defunsignatures">
+<a id="_g8625">
+</a>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+*whitespace-elements*&nbsp;&nbsp;</td>
+<td class="lambda-list">
+</td>
+<td class="symbol-type">
+&nbsp;[Variable]</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="defun">
+<div class="defunsignatures">
+<a id="_g8591">
+</a>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+raw-string&nbsp;&nbsp;</td>
+<td class="lambda-list">
+processor string <em>&amp;optional</em> newlines-p</td>
+<td class="symbol-type">
+&nbsp;[Generic&nbsp;function]</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="defun">
+<div class="defunsignatures">
+<a id="_g8592">
+</a>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+newline&nbsp;&nbsp;</td>
+<td class="lambda-list">
+processor</td>
+<td class="symbol-type">
+&nbsp;[Generic&nbsp;function]</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="defun">
+<div class="defunsignatures">
+<a id="_g8593">
+</a>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+freshline&nbsp;&nbsp;</td>
+<td class="lambda-list">
+processor</td>
+<td class="symbol-type">
+&nbsp;[Generic&nbsp;function]</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="defun">
+<div class="defunsignatures">
+<a id="_g8594">
+</a>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+indent&nbsp;&nbsp;</td>
+<td class="lambda-list">
+processor</td>
+<td class="symbol-type">
+&nbsp;[Generic&nbsp;function]</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="defun">
+<div class="defunsignatures">
+<a id="_g8595">
+</a>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+unindent&nbsp;&nbsp;</td>
+<td class="lambda-list">
+processor</td>
+<td class="symbol-type">
+&nbsp;[Generic&nbsp;function]</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="defun">
+<div class="defunsignatures">
+<a id="_g8596">
+</a>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+toggle-indenting&nbsp;&nbsp;</td>
+<td class="lambda-list">
+processor</td>
+<td class="symbol-type">
+&nbsp;[Generic&nbsp;function]</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="defun">
+<div class="defunsignatures">
+<a id="_g8597">
+</a>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+embed-value&nbsp;&nbsp;</td>
+<td class="lambda-list">
+processor value</td>
+<td class="symbol-type">
+&nbsp;[Generic&nbsp;function]</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="defun">
+<div class="defunsignatures">
+<a id="_g8598">
+</a>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+embed-code&nbsp;&nbsp;</td>
+<td class="lambda-list">
+processor code</td>
+<td class="symbol-type">
+&nbsp;[Generic&nbsp;function]</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="defun">
+<div class="defunsignatures">
+<a id="_g8651">
+</a>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+op-&gt;code&nbsp;&nbsp;</td>
+<td class="lambda-list">
+op <em>&amp;rest</em> operands</td>
+<td class="symbol-type">
+&nbsp;[Generic&nbsp;function]</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="defun">
+<div class="defunsignatures">
+<a id="_g8564">
+</a>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+emit-html&nbsp;&nbsp;</td>
+<td class="lambda-list">
+sexp</td>
+<td class="symbol-type">
+&nbsp;[Function]</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="defun">
+<div class="defunsignatures">
+<a id="_g8565">
+</a>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+codegen-html&nbsp;&nbsp;</td>
+<td class="lambda-list">
+ops pretty</td>
+<td class="symbol-type">
+&nbsp;[Function]</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="doc-body">
+<p>
+Dunno why flet gets warnings 
+ </p>
+</div>
+</div>
+<div class="defun">
+<div class="defunsignatures">
+<a id="_g8570">
+</a>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+get-pp&nbsp;&nbsp;</td>
+<td class="lambda-list">
+</td>
+<td class="symbol-type">
+&nbsp;[Function]</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="doc-body">
+<p>
+Helper for `emit-html` 
+ </p>
+</div>
+</div>
+<div class="defun">
+<div class="defunsignatures">
+<a id="_g8571">
+</a>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+self-evaluating-p&nbsp;&nbsp;</td>
+<td class="lambda-list">
+obj</td>
+<td class="symbol-type">
+&nbsp;[Function]</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="doc-body">
+<p>
+Checks whether the given object is self evaluating 
+ </p>
+</div>
+</div>
+<div class="defun">
+<div class="defunsignatures">
+<a id="_g8572">
+</a>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+cons-form-p&nbsp;&nbsp;</td>
+<td class="lambda-list">
+form <em>&amp;optional</em> (test #'keywordp)</td>
+<td class="symbol-type">
+&nbsp;[Function]</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="doc-body">
+<p>
+Checks whether the given form matches it's syntax rules 
+ </p>
+</div>
+</div>
+<div class="defun">
+<div class="defunsignatures">
+<a id="_g8573">
+</a>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+parse-cons-form&nbsp;&nbsp;</td>
+<td class="lambda-list">
+sexp</td>
+<td class="symbol-type">
+&nbsp;[Function]</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="doc-body">
+<p>
+Parses the given s-expression according to it's syntax rules 
+ </p>
+</div>
+</div>
+<div class="defun">
+<div class="defunsignatures">
+<a id="_g8574">
+</a>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+parse-explicit-attrs-sexp&nbsp;&nbsp;</td>
+<td class="lambda-list">
+sexp</td>
+<td class="symbol-type">
+&nbsp;[Function]</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="doc-body">
+<p>
+Parses explicit style syntax attributes where the first one 
+ is the set of attributes and the second one is the data of 
+ the given element you needed to parse. 
+ Example: `(html ((:h1 <span class="keyword">
+:style </span>
+&quot;test&quot; <span class="keyword">
+:id </span>
+&quot;test&quot;) &quot;test&quot;)) 
+ </p>
+</div>
+</div>
+<div class="defun">
+<div class="defunsignatures">
+<a id="_g8575">
+</a>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+parse-implicit-attrs-sexp&nbsp;&nbsp;</td>
+<td class="lambda-list">
+sexp</td>
+<td class="symbol-type">
+&nbsp;[Function]</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="doc-body">
+<p>
+Parses implicit style syntax attributes where the first values 
+ is not the set of the given tag attributes. 
+ Example: `(html (:h1 <span class="keyword">
+:style </span>
+&quot;test&quot; <span class="keyword">
+:id </span>
+&quot;test&quot; &quot;text&quot;))` 
+ </p>
+</div>
+</div>
+<div class="defun">
+<div class="defunsignatures">
+<a id="_g8579">
+</a>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+escape-char&nbsp;&nbsp;</td>
+<td class="lambda-list">
+char</td>
+<td class="symbol-type">
+&nbsp;[Function]</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="doc-body">
+<p>
+Returns the html readable escape character 
+ if you sure that it needs to be escaped 
+ </p>
+</div>
+</div>
+<div class="defun">
+<div class="defunsignatures">
+<a id="_g8580">
+</a>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+escape&nbsp;&nbsp;</td>
+<td class="lambda-list">
+in to-escape</td>
+<td class="symbol-type">
+&nbsp;[Function]</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="doc-body">
+<p>
+Rewrites the given input stream and replaces all 
+ escape characters with the given ones 
+ </p>
+</div>
+</div>
+<div class="defun">
+<div class="defunsignatures">
+<a id="_g8586">
+</a>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+emit&nbsp;&nbsp;</td>
+<td class="lambda-list">
+ip string</td>
+<td class="symbol-type">
+&nbsp;[Function]</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="doc-body">
+<p>
+Takes the indent-printer and string and emits the string to 
+ the printer's output stream, keeping newlines in track 
+ </p>
+</div>
+</div>
+<div class="defun">
+<div class="defunsignatures">
+<a id="_g8587">
+</a>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+emit/no-newlines&nbsp;&nbsp;</td>
+<td class="lambda-list">
+ip string <em>&amp;key</em> (start 0) end</td>
+<td class="symbol-type">
+&nbsp;[Function]</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="doc-body">
+<p>
+Emits any needed indentation via `indent-if-necessary` helper 
+ </p>
+</div>
+</div>
+<div class="defun">
+<div class="defunsignatures">
+<a id="_g8588">
+</a>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+emit-newline&nbsp;&nbsp;</td>
+<td class="lambda-list">
+ip</td>
+<td class="symbol-type">
+&nbsp;[Function]</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="doc-body">
+<p>
+Prints newline to output stream of indent-printer 
+ </p>
+</div>
+</div>
+<div class="defun">
+<div class="defunsignatures">
+<a id="_g8589">
+</a>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+emit-freshline&nbsp;&nbsp;</td>
+<td class="lambda-list">
+ip</td>
+<td class="symbol-type">
+&nbsp;[Function]</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="doc-body">
+<p>
+Prints newline to output stream of indent-printer 
+ if it's beginning-of-line-p is true 
+ </p>
+</div>
+</div>
+<div class="defun">
+<div class="defunsignatures">
+<a id="_g8590">
+</a>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+indent-if-necessary&nbsp;&nbsp;</td>
+<td class="lambda-list">
+ip</td>
+<td class="symbol-type">
+&nbsp;[Function]</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="doc-body">
+<p>
+Checks `beginning-of-line-p` and `indenting-p` to determine 
+ whether it needs or not to emit indentation 
+ </p>
+</div>
+</div>
+<div class="defun">
+<div class="defunsignatures">
+<a id="_g8614">
+</a>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+evaluate&nbsp;&nbsp;</td>
+<td class="lambda-list">
+<em>&amp;optional</em> condition</td>
+<td class="symbol-type">
+&nbsp;[Function]</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="defun">
+<div class="defunsignatures">
+<a id="_g8615">
+</a>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+eval-dynamic-vars&nbsp;&nbsp;</td>
+<td class="lambda-list">
+<em>&amp;optional</em> condition</td>
+<td class="symbol-type">
+&nbsp;[Function]</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="defun">
+<div class="defunsignatures">
+<a id="_g8616">
+</a>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+eval-code&nbsp;&nbsp;</td>
+<td class="lambda-list">
+<em>&amp;optional</em> condition</td>
+<td class="symbol-type">
+&nbsp;[Function]</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="defun">
+<div class="defunsignatures">
+<a id="_g8618">
+</a>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+process&nbsp;&nbsp;</td>
+<td class="lambda-list">
+processor form</td>
+<td class="symbol-type">
+&nbsp;[Function]</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="defun">
+<div class="defunsignatures">
+<a id="_g8619">
+</a>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+sexp-html-p&nbsp;&nbsp;</td>
+<td class="lambda-list">
+form</td>
+<td class="symbol-type">
+&nbsp;[Function]</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="doc-body">
+<p>
+Checks whether the given form satisfies the conditions 
+ </p>
+</div>
+</div>
+<div class="defun">
+<div class="defunsignatures">
+<a id="_g8620">
+</a>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+process-sexp-html&nbsp;&nbsp;</td>
+<td class="lambda-list">
+processor form</td>
+<td class="symbol-type">
+&nbsp;[Function]</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="doc-body">
+<p>
+I don't know why so many functions 
+ </p>
+</div>
+</div>
+<div class="defun">
+<div class="defunsignatures">
+<a id="_g8626">
+</a>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+block-element-p&nbsp;&nbsp;</td>
+<td class="lambda-list">
+tag</td>
+<td class="symbol-type">
+&nbsp;[Function]</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="defun">
+<div class="defunsignatures">
+<a id="_g8627">
+</a>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+paragraph-element-p&nbsp;&nbsp;</td>
+<td class="lambda-list">
+tag</td>
+<td class="symbol-type">
+&nbsp;[Function]</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="defun">
+<div class="defunsignatures">
+<a id="_g8628">
+</a>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+empty-element-p&nbsp;&nbsp;</td>
+<td class="lambda-list">
+tag</td>
+<td class="symbol-type">
+&nbsp;[Function]</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="defun">
+<div class="defunsignatures">
+<a id="_g8629">
+</a>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+whitespace-p&nbsp;&nbsp;</td>
+<td class="lambda-list">
+tag</td>
+<td class="symbol-type">
+&nbsp;[Function]</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="defun">
+<div class="defunsignatures">
+<a id="_g8630">
+</a>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+process-cons-sexp-html&nbsp;&nbsp;</td>
+<td class="lambda-list">
+processor form</td>
+<td class="symbol-type">
+&nbsp;[Function]</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="doc-body">
+<p>
+Parses the list into three parts: the tag symbol, 
+ plist of attribute key/value pairs, list of body forms 
+ </p>
+</div>
+</div>
+<div class="defun">
+<div class="defunsignatures">
+<a id="_g8631">
+</a>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+emit-open-tag&nbsp;&nbsp;</td>
+<td class="lambda-list">
+processor tag body-p attributes</td>
+<td class="symbol-type">
+&nbsp;[Function]</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="doc-body">
+<p>
+First part is parse the open tag 
+ </p>
+</div>
+</div>
+<div class="defun">
+<div class="defunsignatures">
+<a id="_g8632">
+</a>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+emit-attributes&nbsp;&nbsp;</td>
+<td class="lambda-list">
+processor attributes</td>
+<td class="symbol-type">
+&nbsp;[Function]</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="doc-body">
+<p>
+And then look for the nested attributes 
+ </p>
+</div>
+</div>
+<div class="defun">
+<div class="defunsignatures">
+<a id="_g8633">
+</a>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+emit-element-body&nbsp;&nbsp;</td>
+<td class="lambda-list">
+processor tag body</td>
+<td class="symbol-type">
+&nbsp;[Function]</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="doc-body">
+<p>
+I'm tired of writing documentation which no one reads 
+ </p>
+</div>
+</div>
+<div class="defun">
+<div class="defunsignatures">
+<a id="_g8634">
+</a>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+emit-close-tag&nbsp;&nbsp;</td>
+<td class="lambda-list">
+processor tag body-p</td>
+<td class="symbol-type">
+&nbsp;[Function]</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="doc-body">
+<p>
+Emits the closing tag whether it's xhtml or not 
+ </p>
+</div>
+</div>
+<div class="defun">
+<div class="defunsignatures">
+<a id="_g8635">
+</a>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+make-op-buff&nbsp;&nbsp;</td>
+<td class="lambda-list">
+</td>
+<td class="symbol-type">
+&nbsp;[Function]</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="defun">
+<div class="defunsignatures">
+<a id="_g8636">
+</a>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+push-op&nbsp;&nbsp;</td>
+<td class="lambda-list">
+op ops-buff</td>
+<td class="symbol-type">
+&nbsp;[Function]</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="defun">
+<div class="defunsignatures">
+<a id="_g8647">
+</a>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+sexp-&gt;ops&nbsp;&nbsp;</td>
+<td class="lambda-list">
+body</td>
+<td class="symbol-type">
+&nbsp;[Function]</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="defun">
+<div class="defunsignatures">
+<a id="_g8648">
+</a>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+optimize-static-output&nbsp;&nbsp;</td>
+<td class="lambda-list">
+ops</td>
+<td class="symbol-type">
+&nbsp;[Function]</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="doc-body">
+<p>
+Returns a new vecrot containing the optimized version 
+ of the passed vector of certain operations 
+ </p>
+</div>
+</div>
+<div class="defun">
+<div class="defunsignatures">
+<a id="_g8649">
+</a>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+compile-buffer&nbsp;&nbsp;</td>
+<td class="lambda-list">
+buf ops</td>
+<td class="symbol-type">
+&nbsp;[Function]</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="doc-body">
+<p>
+A wrapper for buffer which processes operations inside the buffer 
+ </p>
+</div>
+</div>
+<div class="defun">
+<div class="defunsignatures">
+<a id="_g8650">
+</a>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+generate-code&nbsp;&nbsp;</td>
+<td class="lambda-list">
+ops</td>
+<td class="symbol-type">
+&nbsp;[Function]</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="defun">
+<div class="defunsignatures">
+<a id="_g8660">
+</a>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+special-form-p&nbsp;&nbsp;</td>
+<td class="lambda-list">
+form</td>
+<td class="symbol-type">
+&nbsp;[Function]</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="defun">
+<div class="defunsignatures">
+<a id="_g8661">
+</a>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+process-special-form&nbsp;&nbsp;</td>
+<td class="lambda-list">
+processor form</td>
+<td class="symbol-type">
+&nbsp;[Function]</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="defun">
+<div class="defunsignatures">
+<a id="_g8663">
+</a>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+macro-form-p&nbsp;&nbsp;</td>
+<td class="lambda-list">
+form</td>
+<td class="symbol-type">
+&nbsp;[Function]</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="doc-body">
+<p>
+Checks whether the given form follows the rules 
+ </p>
+</div>
+</div>
+<div class="defun">
+<div class="defunsignatures">
+<a id="_g8664">
+</a>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+parse-html-macro-lambda&nbsp;&nbsp;</td>
+<td class="lambda-list">
+args</td>
+<td class="symbol-type">
+&nbsp;[Function]</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="doc-body">
+<p>
+Parses the given macro, another wrapper 
+ </p>
+</div>
+</div>
+<div class="defun">
+<div class="defunsignatures">
+<a id="_g8665">
+</a>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+generate-macro-with-attributes&nbsp;&nbsp;</td>
+<td class="lambda-list">
+name attribute-args args body</td>
+<td class="symbol-type">
+&nbsp;[Function]</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="doc-body">
+<p>
+Generates a new codegen html macro with the given attributes, a little syntatic sugar 
+ </p>
+</div>
+</div>
+<div class="defun">
+<div class="defunsignatures">
+<a id="_g8666">
+</a>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+generate-macro-w/o-attributes&nbsp;&nbsp;</td>
+<td class="lambda-list">
+name args body</td>
+<td class="symbol-type">
+&nbsp;[Function]</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="doc-body">
+<p>
+Generates a new codegen html macro without the attributes inside 
+ </p>
+</div>
+</div>
+<div class="defun">
+<div class="defunsignatures">
+<a id="_g8667">
+</a>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+expand-macro-form&nbsp;&nbsp;</td>
+<td class="lambda-list">
+form</td>
+<td class="symbol-type">
+&nbsp;[Function]</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="doc-body">
+<p>
+Determine how the macro function should be invoked 
+ </p>
+</div>
+</div>
+<div class="defun">
+<div class="defunsignatures">
+<a id="_g8566">
+</a>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+html&nbsp;&nbsp;</td>
+<td class="lambda-list">
+<em>&amp;whole</em> whole <em>&amp;body</em> body</td>
+<td class="symbol-type">
+&nbsp;[Macro]</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="doc-body">
+<p>
+Interpreter 
+ </p>
+</div>
+</div>
+<div class="defun">
+<div class="defunsignatures">
+<a id="_g8567">
+</a>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+with-html-out&nbsp;&nbsp;</td>
+<td class="lambda-list">
+(stream <em>&amp;key</em> (pretty *pretty*)) <em>&amp;body</em> body</td>
+<td class="symbol-type">
+&nbsp;[Macro]</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="defun">
+<div class="defunsignatures">
+<a id="_g8568">
+</a>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+define-html-macro&nbsp;&nbsp;</td>
+<td class="lambda-list">
+name (<em>&amp;rest</em> args) <em>&amp;body</em> body</td>
+<td class="symbol-type">
+&nbsp;[Macro]</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="doc-body">
+<p>
+Defines special HTML macro 
+ </p>
+</div>
+</div>
+<div class="defun">
+<div class="defunsignatures">
+<a id="_g8569">
+</a>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+in-html-style&nbsp;&nbsp;</td>
+<td class="lambda-list">
+syntax</td>
+<td class="symbol-type">
+&nbsp;[Macro]</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="doc-body">
+<p>
+Checks whether the given form matches it's syntax 
+ </p>
+</div>
+</div>
+<div class="defun">
+<div class="defunsignatures">
+<a id="_g8617">
+</a>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+with-dynamic-evaluation&nbsp;&nbsp;</td>
+<td class="lambda-list">
+(<em>&amp;key</em> values code) <em>&amp;body</em> body</td>
+<td class="symbol-type">
+&nbsp;[Macro]</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="defun">
+<div class="defunsignatures">
+<a id="_g8662">
+</a>
+<table cellpadding="0" cellspacing="0" width="100%">
+<colgroup span="3">
+<col width="0*"/>
+<col width="1*"/>
+<col width="0*"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="symbol-name">
+define-html-special-op&nbsp;&nbsp;</td>
+<td class="lambda-list">
+name (processor <em>&amp;rest</em> other-parameters) <em>&amp;body</em> body</td>
+<td class="symbol-type">
+&nbsp;[Macro]</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="cludg-footer">
+Generated by&nbsp;<a href="mailto:ihatchondo@common-lisp.net" lang="en">
+CLDOC</a>
+- 2017-05-11 14:44:56</div>
+</body>
+</html>
